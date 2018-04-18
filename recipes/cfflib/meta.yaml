@@ -16,16 +16,15 @@ source:
 build:
   number: 0
   script: python -m pip install --no-deps --ignore-installed .
-  skip: True  # [py<3]
 
 requirements:
   build: 
-    - python
+    - python <3
     - setuptools
     - pip
 
   run: 
-    - python
+    - python <3
     - numpy
     - nibabel
     
